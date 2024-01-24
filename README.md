@@ -1,12 +1,18 @@
 **************************************************************************************************************************************************************************************************************************************************************************
 *****************************************************************************************************************CONTEXTO DO PROJETO**************************************************************************************************************************************
 **************************************************************************************************************************************************************************************************************************************************************************
-1 - Criar pipeline de dados 
-2 - Verificar se as dependências do projeto já foram instaladas, se sim imprimir mensagem informativa, em caso negativo instalar bibliotecas(Pandas, Numpy, pyarrow)
-3- Criar estrutura de dados(Dataframe) em python com dados que vão simular uma carteira de ativos
-4 - Criar função que vai inserir uma nova coluna(MELHOR_COTACAO_DIA) com dados calculados das colunas(COTACAO, PRECO_TETO)
-5 - Criar um processo para persisitir os dados
-6 - Efetuar a execução dos processos criados
+1 - Instalar bibliotecas: Pandas, Numpy, pyarrow
+
+2 - Verificar se as dependências do projeto já foram instaladas, se sim, imprimir mensagem informando a versão, e em caso negativo efetuar a instalação.
+
+3 - Criar "pipeline de dados" que contemple os seguintes cenários: 
+  **Validação dos itens acima(1 e 2).**
+  **criar uma estrutura de dados(dataframe) para simular uma carteira de ativos**
+  **Criar função que vai inserir uma nova coluna(MELHOR_COTACAO_DIA) com dados calculados das colunas(COTACAO, PRECO_TETO)**        
+  **Criar um processo para persisitir os dados em um diretório qualquer na máquina host**
+
+4 - Rodar o projeto utilizando container
+5 - Utilizar o docker compose para gerenciar o container
 
 
 
