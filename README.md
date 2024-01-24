@@ -1,12 +1,12 @@
 **************************************************************************************************************************************************************************************************************************************************************************
 *****************************************************************************************************************CONTEXTO DO PROJETO**************************************************************************************************************************************
 **************************************************************************************************************************************************************************************************************************************************************************
-1 - Criar um pipeline de dados 
-3 - Verificar se as dependências do projeto ja foram instaladas, se sim imprimir mensagem informativa, em caso negativo instalar bibliotecas(Pandas, Numpy, pyarrow)
-4 - Criar uma estrutura de dados(Dataframe) em python com dados que vão simular uma carteira de ativos
-5 - Criar uma função que vai inserir uma nova coluna(MELHOR_COTACAO_DIA) com dados calculados das colunas(COTACAO, PRECO_TETO)
-6 - Criar um processo para persisitir os dados
-7 - Efetuar a execução dos processos criados
+1 - Criar pipeline de dados 
+2 - Verificar se as dependências do projeto já foram instaladas, se sim imprimir mensagem informativa, em caso negativo instalar bibliotecas(Pandas, Numpy, pyarrow)
+3- Criar estrutura de dados(Dataframe) em python com dados que vão simular uma carteira de ativos
+4 - Criar função que vai inserir uma nova coluna(MELHOR_COTACAO_DIA) com dados calculados das colunas(COTACAO, PRECO_TETO)
+5 - Criar um processo para persisitir os dados
+6 - Efetuar a execução dos processos criados
 
 
 
