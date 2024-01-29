@@ -14,7 +14,7 @@ COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Exponha a porta 5000 para que a aplicação possa ser acessada externamente
-EXPOSE 5000
+# EXPOSE 5000
 
 # Comando para iniciar a aplicação
 CMD ["python", "pipeline.py"]

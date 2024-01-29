@@ -1,55 +1,11 @@
-from datetime import datetime as dt
-from platform import python_version
-
-print("Python Version: ", python_version())
-#print("\n")
-###########################################################################################################################################################################################################################################
-                                                                                        # INSTALAÇÃO DE BIBLIOTECAS NECESSÁRIAS
-###########################################################################################################################################################################################################################################
-import importlib
-import subprocess
 import pandas as pd
 import pyarrow as pa
 import pyarrow.parquet as pq
+from datetime import datetime as dt
 
+# from platform import python_version
+# print("Python Version: ", python_version())
 
-def check_install_pandas():
-    try:
-        # Check Pandas
-        importlib.import_module('pandas')                         
-        #print("Pandas já está instalado!")
-        
-        def obter_versao_pandas():
-            return pd.__version__
-        versao_pandas = obter_versao_pandas()
-        print(f"Pandas já está instalado! Version: {versao_pandas}")
-        
-    except ImportError:
-        print("Pandas não encontrado. Instalando agora...")
-        
-        # Instala o pandas usando o pip
-        subprocess.run(['pip', 'install', 'pandas'], check=True)
-        print("Pandas foi instalado com sucesso.")
-
-
-def check_install_pyarrow():
-    try:
-        import pyarrow
-        #print("PyArrow está instalado! ")
-        
-        def obter_versao_pyarrow():
-            return pa.__version__
-        
-        versao_pyarrow = obter_versao_pyarrow()
-        print(f"PyArrow está instalado! Version: {versao_pyarrow}")
-        
-    except ImportError:
-        print("PyArrow não está instalado. Por favor, instale utilizando 'pip install pyarrow'.")
- 
-
-# Call
-check_install_pandas()
-check_install_pyarrow()
 ###########################################################################################################################################################################################################################################
                                                                 # CRIAR DATAFRAME 
 ###########################################################################################################################################################################################################################################
@@ -105,11 +61,8 @@ def persistir_dataframe_parquet(dataframe, caminho_arquivo):
 # PATH
 delta = dt.now().strftime('%Y-%m-%d-%H-%M-%S')
 #path = f'datalake/parquet/carteita-{delta}.parquet'
-path = f'/home/adriano/eng/app/data/parquet/carteita-{delta}.parquet'
-         
-        
-
-
+path = f'/home/adriano/ed/app/data/parquet/carteita-{delta}.parquet'
+           
 ###########################################################################################################################################################################################################################################                                             
 ###########################################################################################################################################################################################################################################
                                                                                             # EXECUTION SESSION

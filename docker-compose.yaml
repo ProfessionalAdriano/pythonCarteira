@@ -1,11 +1,11 @@
 version: '3'
 
 services:    
-  minha_carteira:  # Nome do container 
+  carteira:  # Nome do container 
     image: adr-python
     # command: python pipeline.py
     volumes:
-      - /home/adriano/eng/app/data/parquet:/home/adriano/eng/app/data/parquet 
+      - /home/adriano/en/app/data/parquet:/home/adriano/en/app/data/parquet 
          
    
 
