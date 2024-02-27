@@ -1,11 +1,3 @@
-
-<style>
-  .centro {
-    text-align: center;
-  }
-</style>
-<div class="centro">
-
 # **REQUISITOS NECESSÁRIO** 
 
 </div>
