@@ -72,4 +72,3 @@ create_dataframe()
 add_custom_columns(create_dataframe())
 persistir_dataframe_parquet(create_dataframe(), path)
 
-## Teste de commit
